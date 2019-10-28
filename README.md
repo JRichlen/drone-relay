@@ -8,16 +8,16 @@ This project requires [Docker](https://www.docker.com/), a [Webhook Relay](https
 ## Setup
 Add required environment variables. If missing from the environment, you will be prompted to enter any missing variables.
 
-Variable | Description 
-========== | ============= 
-DRONE_ADMIN | Github user that will be the drone admin 
-DRONE_GITHUB_CLIENT_ID | Github OAuth app client id 
-DRONE_GITHUB_CLIENT_SECRET | Github OAuth app client secret 
-RELAY_KEY | Web Relay access key 
-RELAY_TOKEN | Web Relay access token 
-RELAY_HOST | Web relay host url 
+| Variable | Description |
+| -------- | -------- |
+| DRONE_ADMIN | Github user that will be the drone admin |
+| DRONE_GITHUB_CLIENT_ID | Github OAuth app client id |
+| DRONE_GITHUB_CLIENT_SECRET | Github OAuth app client secret |
+| RELAY_KEY | Web Relay access key | 
+| RELAY_TOKEN | Web Relay access token | 
+| RELAY_HOST | Web relay host url  |
 
-To create the `DRONE_GITHUB_CLIENT_ID` and `DRONE_GITHUB_CLIENT_SECRET`
+To create the `DRONE_GITHUB_CLIENT_ID` and `DRONE_GITHUB_CLIENT_SECRET` follow the [Github OAuth app instructions](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/).
 
 To create the relay tunnel go to https://my.webhookrelay.com/tunnels like the following:
 
