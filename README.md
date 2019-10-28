@@ -35,3 +35,7 @@ This will start the drone server and agent. Then it will connect the drone serve
 ## Alternative to Web Relay
 If deploying to an ec2 instance the web relay can be ignored if you're planning to use a route 53 alias for the ec2 instance.
 
+## Notes
+* This is not setup to use HTTPS, **do not add secrets through the web relay in the browser or through the cli using the web relay as the drone server url**.
+  * Traffic is not encrypted. Add secrets by accessing the browser frontend via [`localhost/`](https://localhost/) or using the drone CLI using localhost as the drone server.
+* `DRONE_RUNNER_CAPACITY` is set to 2 by default, but this can be tweaked inside [docker-compose.yml](https://github.com/JRichlen/drone-relay/blob/master/docker-compose.yml#L33) 
